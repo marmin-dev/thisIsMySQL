@@ -1,2 +1,11 @@
 mysql server connect
 ./mysql -u root -p
+
+source path/filename.sql file import
+source ~/employees.sql
+
+disconnect mysql server
+exit;
+
+DELIMITER 는 구분문자를 의미한다 뒤에 //가 나오면 기존의 ;세미콜론을 대신한다는 의미다
+제일 마지막행에서 세미콜론 ;로 돌려놓아야한다
