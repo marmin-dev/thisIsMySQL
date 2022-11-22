@@ -1,0 +1,3 @@
+INSERT IGNORE INTO userTbl VALUES(1,'김길환',32);
+INSERT INTO userTbl VALUES(1,'김길환',32)
+ON DUPLICATE KEY UPDATE name='김길환', age=32;

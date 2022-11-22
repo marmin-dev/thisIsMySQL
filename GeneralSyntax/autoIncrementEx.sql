@@ -1,0 +1,7 @@
+CREATE TABLE userExTbl(
+    userId INT AUTO_INCREMENT PRIMARY KEY,
+    name char(3),
+    age INT
+);
+ALTER TABLE userExTbl AUTO_INCREMENT = 100;
+@@AUTO_INCREMENT_INCREMENT = 3;
