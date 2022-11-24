@@ -1,0 +1,10 @@
+-- ADDDATE(날짜/시간), SUBDAE(날짜,차이)
+-- 날짜를 기준으로 차이를 더하거나 뺸 날짜를 구한다
+SELECT ADDDATE('2022-01-01',INTERVAL 31 DAY);
+SELECT SUBDATE('2022-01-01',INTERVAL 22 MONTH);
+-- ADDTIME(날짜/시간,시간), SUBTIME(날짜/시간,시간)
+SELECT ADDTIME('2021-03-03 23:59:59','12:12:12');
+SELECT SUBTIME('2021-03-03 23:59:59','12:12:12');
+-- DATEDIFF(날짜1,날짜2), TIMEDIFF(날짜1 또는 시간1, 날짜1 또는 시간2)
+-- DATEDIFF()는 날짜1-날짜2의 일수로 결과를 구한다.
+SELECT DATEDIFF('2021-03-03','2022-11-25');

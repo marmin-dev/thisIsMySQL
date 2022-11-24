@@ -1,0 +1,2 @@
+SELECT CAST(AVG(amount) AS SINGED INTEGER) AS '평균구매개수' FROM buytbl;
+SELECT CONVERT(AVG(amount),SIGNED INTEGER) AS '평균구매개수' FROM buytlbl;
