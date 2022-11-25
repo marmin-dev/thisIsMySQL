@@ -1,0 +1,13 @@
+DROP TABLE IF EXISTS usertbl;
+CREATE TABLE usertbl(
+userid CHAR(4) NOT NULL PRIMARY KEY,
+name CHAR(4) NOT NULL,
+birthYear INT DEFAULT '-1',
+addr CHAR(4) DEFAULT '서울',
+height INT DEFAULT '170'
+);
+ALTER TABLE usertbl
+ALTER COLUMN birthYear SET DEFAULT '-1';
+
+INSERT INTO usertbl VALUES ('KKH','김길환',DEFAULT, DEFAULT, DEFAULT);
+SELECT * FROM usertbl;
